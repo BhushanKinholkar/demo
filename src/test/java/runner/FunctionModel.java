@@ -27,7 +27,8 @@ public class FunctionModel
 	@When("^enter the email$")
 	public void enter_the_email() throws Throwable 
 	{
-		driver.findElement(By.xpath("//input[@id='login1']")).sendKeys("bhushank@rediffmail.com");
+		WebElement ele2 = driver.findElement(By.xpath("//input[@id='login1']"));
+		ele2.sendKeys("bhushank@rediffmail.com");
 		   
 	    
 	}
