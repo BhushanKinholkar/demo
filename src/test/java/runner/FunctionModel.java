@@ -2,6 +2,7 @@ package runner;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import cucumber.api.java.en.Given;
@@ -34,7 +35,8 @@ public class FunctionModel
 	@Then("^enter the password$")
 	public void enter_the_password() throws Throwable 
 	{
-		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("asdaqweqw");
+		WebElement ele = driver.findElement(By.xpath("//input[@id='password']"));
+		ele.sendKeys("absdmabs amsbdmabsd");
 	    
 		
 	}
